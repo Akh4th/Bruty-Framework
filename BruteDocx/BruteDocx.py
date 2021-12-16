@@ -1,11 +1,16 @@
 import msoffcrypto as ms
-import io, time, datetime
+import io, time, datetime, os
 from termcolor import colored as c
 
 global t0
 
 docx = input(c("LOCKED DOCX FILE : ", "red"))
 wordlist = input(c("WORDLIST FILE : ", "red"))
+# If wordlist doesnt exist aborts
+if not os.path.isfile(wordlist):
+    print(c("WORDLIST DOESNT EXIST !", "red"))
+    print(c("ABORTING !!!", "yellow"))
+    quit()
 counts = len(list(open(wordlist, "r").readlines()))
 dec = io.BytesIO()
 now = datetime.datetime.now()
