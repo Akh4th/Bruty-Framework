@@ -1,6 +1,11 @@
 # Bruty-Framework By Akh4th !
 
-Python brute forcer & wordlist generator !
+Python files brute forcer & wordlist generator !
+
+# Files extensions available :
+PDF
+Docx
+ZIP
 
 ## Make sure you install all the requirements from requirements.txt !!
 " pip install -r requirements.txt "
