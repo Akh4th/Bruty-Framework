@@ -1,5 +1,5 @@
 # Bruty-Framework By Akh4th !
-Python files brute forcer & wordlist generator !
+Python brute forcer & wordlist generator !
 
 # Available Brute Forces :
 ZIP, DOCX, PDF, SSH.
