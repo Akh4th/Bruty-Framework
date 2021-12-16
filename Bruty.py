@@ -16,7 +16,7 @@ time.sleep(0.5)
 print(c("\nBRUTY LOADED SUCCESSFULLY !\n", "green"))
 time.sleep(2)
 
-print(c("What kind of file would you like to brute force :", "red"))
+print(c("What would you like to brute force :", "red"))
 print(left + c("1","green") + right + " ZIP FILE\t\t\t" + left + c("2","green") + right + " PDF FILE")
 print(left + c("3","green") + right + " DOCX FILE\t\t\t" + left + c("4","green") + right + " SSH")
 print(left + c("5", "green") + right + " FTP\t\t\t")
