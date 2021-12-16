@@ -8,4 +8,4 @@ ZIP, DOCX, PDF, SSH.
 " pip install -r requirements.txt "
 
 # Make sure your locked file & wordlist file are located in the same folder as Bruty !
-( Or use full path for files ) !
+# ( Or use full path for files ) !
