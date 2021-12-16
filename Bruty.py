@@ -32,23 +32,23 @@ try:
     if pick == "1":
         print(c("\nSTARTING BruteZip.py !", "red"))
         time.sleep(1.5)
-        exec(open("BruteZip/BruteZip.py").read())
+        exec(open("Brute_Forces/BruteZip.py").read())
     elif pick == "2":
         print(c("\nSTARTING BrutePDF.py !", "red"))
         time.sleep(1.5)
-        exec(open("BrutePDF/BrutePDF.py").read())
+        exec(open("Brute_Forces/BrutePDF.py").read())
     elif pick == "3":
         print(c("\nSTARTING BruteDocx.py !", "red"))
         time.sleep(1.5)
-        exec(open("BruteDocx/BruteDocx.py").read())
+        exec(open("Brute_Forces/BruteDocx.py").read())
     elif pick == "4":
         print(c("\nSTARTING BruteSSH.py", "red"))
         time.sleep(1.5)
-        exec(open("BruteSSH/BruteSSH.py").read())
+        exec(open("Brute_Forces/BruteSSH.py").read())
     elif pick == "5":
         print(c("\nSTARTING BruteFTP.py !", "red"))
         time.sleep(1.5)
-        exec(open("BruteFTP/BruteFTP.py").read())
+        exec(open("Brute_Forces/BruteFTP.py").read())
     else:
         print(c("\nSTARTING wordy.py !", "red"))
         time.sleep(1.5)
