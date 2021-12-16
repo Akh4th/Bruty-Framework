@@ -1,5 +1,4 @@
 # Bruty-Framework By Akh4th !
-
 Python files brute forcer & wordlist generator !
 
 # Files extensions available :
