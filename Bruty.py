@@ -18,7 +18,7 @@ time.sleep(2)
 
 print(c("What kind of file would you like to brute force :", "red"))
 print(left + c("1","green") + right + " ZIP FILE\t\t\t" + left + c("2","green") + right + " PDF FILE")
-print(left + c("3","green") + right + " DOCX FILE\t\t\t" + left + c("4","green") + right + " TEMPORARY UNAVAILABLE")
+print(left + c("3","green") + right + " DOCX FILE\t\t\t" + left + c("4","green") + right + " SSH")
 print(left + c("*", "green") + right + " CREATE WORDLIST")
 pick = input()
 while pick not in picks:
@@ -41,11 +41,9 @@ try:
         time.sleep(1.5)
         exec(open("BruteDocx/BruteDocx.py").read())
     elif pick == "4":
-        # print(c(" ", "red"))
-        # time.sleep(1.5)
-        # exec(open("").read())
-        print(c("I SAID TEMPORARY UNAVAILABLE RIGHT ?!", "red"))
-        quit()
+        print(c("\nSTARTING BruteSSH.py", "red"))
+        time.sleep(1.5)
+        exec(open("BruteSSH/BruteSSH.py").read())
     else:
         print(c("\nSTARTING wordy.py !", "red"))
         time.sleep(1.5)
