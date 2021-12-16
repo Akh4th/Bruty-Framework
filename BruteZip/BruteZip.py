@@ -1,5 +1,6 @@
 import datetime
 import time
+import os
 import zipfile as z
 from termcolor import colored as c
 
@@ -7,6 +8,11 @@ from termcolor import colored as c
 # Files :
 zip_file = input(c("LOCKED ZIP FILE : ", "green"))  # File you want to brute force !
 wordlist = input(c("WORDLIST FILE : ", "green"))  # File to import passwords from !
+# If wordlist doesnt exist aborts
+if not os.path.isfile(wordlist):
+    print(c("WORDLIST DOESNT EXIST !", "red"))
+    print(c("ABORTING !!!", "yellow"))
+    quit()
 # Global Definitions
 target = z.ZipFile(zip_file)
 now = datetime.datetime.now()
