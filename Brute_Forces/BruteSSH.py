@@ -9,6 +9,13 @@ server = input(c("SERVER NAME : ", "red"))
 username = input(c("USERNAME : ", "red"))
 wordlist = input(c("WORDLIST FILE : ", "red"))
 
+# If server isn't valid aborts
+try:
+    socket.inet_aton(server)
+except socket.error:
+    print(c("IP INVALID !", "red"), c("\nABORTING !!!", "yellow"))
+    quit()
+
 # If wordlist doesnt exist aborts
 if not os.path.isfile(wordlist):
     print(c("WORDLIST DOESNT EXIST !", "red"))
