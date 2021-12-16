@@ -1,0 +1,4 @@
+termcolor~=1.1.0
+pikepdf~=4.2.0
+cryptography~=36.0.0
+msoffcrypto-tool~=4.12.0
