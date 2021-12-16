@@ -1,4 +1,4 @@
-import time, pikepdf
+import time, pikepdf, os
 from termcolor import colored as c
 from datetime import datetime as d
 
