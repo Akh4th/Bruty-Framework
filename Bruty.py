@@ -3,7 +3,7 @@ from termcolor import colored as c
 
 left = c("[", "red")
 right = c("]", "red")
-picks = ["1", "2", "3", "4", "*"]
+picks = ["1", "2", "3", "4", "5", "*"]
 mistakes = 0
 
 print(c("STARTING BRUTY BY", "red"), c("Akh4th", "green"), c("!\n", "red"))
@@ -19,7 +19,8 @@ time.sleep(2)
 print(c("What kind of file would you like to brute force :", "red"))
 print(left + c("1","green") + right + " ZIP FILE\t\t\t" + left + c("2","green") + right + " PDF FILE")
 print(left + c("3","green") + right + " DOCX FILE\t\t\t" + left + c("4","green") + right + " SSH")
-print(left + c("*", "green") + right + " CREATE WORDLIST")
+print(left + c("5", "green") + right + " FTP\t\t\t")
+print("\n" + left + c("*", "green") + right + " CREATE WORDLIST")
 pick = input()
 while pick not in picks:
     pick = input(c("WRONG INPUT ! ", "red"))
@@ -44,6 +45,10 @@ try:
         print(c("\nSTARTING BruteSSH.py", "red"))
         time.sleep(1.5)
         exec(open("BruteSSH/BruteSSH.py").read())
+    elif pick == "5":
+        print(c("\nSTARTING BruteFTP.py !", "red"))
+        time.sleep(1.5)
+        exec(open("BruteFTP/BruteFTP.py").read())
     else:
         print(c("\nSTARTING wordy.py !", "red"))
         time.sleep(1.5)
