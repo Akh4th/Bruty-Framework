@@ -5,6 +5,11 @@ from datetime import datetime as d
 # Loading files
 wordlist = input(c("WORDLIST NAME : ", "green"))
 pdf = input(c("LOCKED PDF FILE :", "green"))
+# If wordlist doesnt exist aborts
+if not os.path.isfile(wordlist):
+    print(c("WORDLIST DOESNT EXIST !", "red"))
+    print(c("ABORTING !!!", "yellow"))
+    quit()
 
 
 # Brute force function
