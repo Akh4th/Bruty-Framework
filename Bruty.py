@@ -8,12 +8,7 @@ mistakes = 0
 
 print(c("STARTING BRUTY BY", "red"), c("Akh4th", "green"), c("!\n", "red"))
 time.sleep(1.5)
-for i in range(11):
-    x = "*" * i
-    time.sleep(0.5)
-    print("[" + c("*" * i, "green") + c("*" * (10-i), "red") + "]" + c(f" {i*10}% loaded", "blue"))
-time.sleep(0.5)
-print(c("\nBRUTY LOADED SUCCESSFULLY !\n", "green"))
+print(c("BRUTY LOADED SUCCESSFULLY !\n", "green"))
 time.sleep(2)
 
 print(c("What would you like to brute force :", "red"))
